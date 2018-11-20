@@ -25,3 +25,23 @@ bg1.jpg ren index/bg.jpg
 bg1.2.jpg ren home/bg.jpg
 
 home.html included
+
+
+10:05pm
+index.html
+-fixed display:
+responsiveness of landing page
+-insert new placeholder links elements:
+Lester Jan Gamier
+FullStack Web Developer
+-fixed broken links
+------------------------------
+112118
+12:18am
+home.html => home-old.html
+homeworking.html => home.html
+
+home.html
+-fixed home page
+-insert navigation bar
+-insert "about the stars section"
