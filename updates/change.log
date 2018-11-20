@@ -15,3 +15,11 @@ style.css (astro) -111918
 landingpage.jpg -111818
 bg1.jpg -111918
 bg1.2.jpg -111918
+
+-----------------------------
+112018
+style.css
+-fixed broken links
+
+bg1.jpg ren index/bg.jpg
+bg1.2.jpg ren home/bg.jpg

@@ -8,7 +8,7 @@
 
 #landing {
 	height: 100vh;
-	background-image: url(bg1.jpg);
+	background-image: url(../images/index/bg.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -65,10 +65,24 @@
 	line-height: 200px;
 }
 
+/*-------------------------*/
+.per30 {
+	height: 30%;
+	background-color: black;
+}
+
+.per30:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*-------------------------*/
+
 
 /*custom styling of landing page for different screenviews*/
 
-@media only screen and (max-height: 640px){
+/*@media only screen and (max-height: 640px){
 	#start2 > p {
 		margin-bottom: 0;
 	}
@@ -154,17 +168,16 @@
 		display: none;
 		background-color: red;
 	}
-}
+}*/
 /*end of landing page styles*/
 
 /*custom styling of home page*/
 #home {
 	min-height: 100vh;
-	background-image: url(bg1.2.jpg);
+	background-image: url(../images/home/bg.jpg);
 	/*background-attachment: fixed;*/
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
 
 /*end of custom styling for home page*/
