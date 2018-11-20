@@ -1,1 +1,2 @@
 Day - 1 => Landing page
+Day - 2 => Home page / Contact Page

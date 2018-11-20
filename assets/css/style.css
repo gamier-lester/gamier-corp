@@ -172,12 +172,55 @@
 /*end of landing page styles*/
 
 /*custom styling of home page*/
+/*.container*/
+
 #home {
-	min-height: 100vh;
 	background-image: url(../images/home/bg.jpg);
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	min-height: 100vh;
+	
 }
+
+#slogan {
+	min-height: 50vh;
+	/*width: 100%;*/
+	margin: 0;
+	padding: 0;
+	color: red;
+	/*width: 100%;*/
+	background-color: black;
+	text-align: center;
+	/*line-height: 400px;*/
+}
+
+#slogan h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border: solid 7px red;
+	padding: 5%;
+}
+
+#services {
+	min-height: 50vh;
+	/*border: 2px solid red;*/
+	/*height: 400px;*/
+	color: grey;
+	text-align: center;
+	/*line-height: 400px;*/
+}
+
+#services h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border: solid 7px red;
+	padding: 5%;
+}
+
 
 /*end of custom styling for home page*/
