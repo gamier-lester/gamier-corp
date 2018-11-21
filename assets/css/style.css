@@ -487,12 +487,122 @@ html {
 
 /*custom styling for services section*/
 
-#servicess {
-	min-height: 100vh;
+#services {
+	/*min-height: 100vh;*/
+	max-height: 93vh;
+	/*height: 100%;*/
+	overflow-y: hidden;
 }
 
-.buttonhide {
+#services .card {
+	max-height: 100vh;
+}
+#business {
+	max-height: 20vh;
+}
+
+#modif {
+	max-height: 20vh;
+}
+
+#supp {
+	max-height: 10vh;
+}
+#button-1 {
 	display: none;
 }
 
+#button-2 {
+	display: none;
+}
+
+#button-3 {
+	display: none;
+}
+
+#business-content {
+	display: none;
+	margin-top: 10%;
+	padding: 0 10px;
+}
+
+#joinus-content {
+	display: none;
+	margin-top: 10%;
+	padding: 0 10px;
+}
+
+#support-content {
+	display: none;
+	margin-top: 10%;
+	padding: 0 10px;
+}
+
 /*end of custom styling for services section*/
+
+/*contact us page*/
+#contact > label {
+	display: block;
+	text-align: center;
+	height: 100px;
+	width: 300px;
+	margin: 0 auto;
+	background-color: red;
+	padding-top: 25px;
+}
+
+#contact-us {
+	display: none;
+}
+
+#visit-us {
+	display: none;
+}
+
+#contact-form {
+	display: none;
+}
+
+#visit-form {
+	display: none;
+}
+
+#contact-us:checked ~ #contact-form {
+	display: block;
+}
+
+#visit-us:checked ~ #visit-form {
+	display: block;
+}
+
+#contact-form input[type*=radio] {
+	display: none;
+}
+
+/*
+#form-sup:checked ~ #label-inq h3 {
+	color: red;
+}
+*/
+#contact-form > form > #try999 > #form-inq:checked ~ #label-inq > h3 {
+	color: red;
+}
+
+#contact-form > form > #try999 > #form-sup:checked ~ #label-sup > h3 {
+	color: red;
+}
+
+#contact-form > form > #try999 > #form-oth:checked ~ #label-oth > h3 {
+	color: red;
+}
+
+/*end of contact us page*/
+
+/*gallery*/
+#carousel-home {
+	max-height: 100vh;
+}
+
+#carousel-home img {
+	max-height: 500px;
+}

@@ -59,3 +59,24 @@ create about.hmtl
 
 style.css
 -insert design for about.html
+
+09:00pm
+about.html
+-finished template
+-fix services section
+-fix javascript function for card buttons
+
+create contact.html
+-insert nav
+-insert contact form
+-insert map form
+-insert footer
+
+gallery.html
+-insert nav
+-insert carousel
+-insert modals
+-insert cards
+
+style.css
+-updated styles for about.html, contact.html, gallery.html

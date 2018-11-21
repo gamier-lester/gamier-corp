@@ -113,19 +113,8 @@
  		<div id="mission" class="row mx-0">
  			<!-- upper part of screen -->
  			<div id="mission-upper" class="col-lg-12">
-<!-- 
- 				<div class="mission">
- 					<h1 class="text-center mx-auto animated flip">
- 						MISSION
- 					</h1>
- 				</div>
 
- 				<div class="vision">
- 					<h1 class="text-center mx-auto animated flip">
- 						IMPOSSIBLE
- 					</h1>
- 				</div>
- -->
+ 				<!-- start of upper part container -->
  				<div class="container-fluid">
  					<div class="row">
 
@@ -143,7 +132,10 @@
 
  					</div>
  				</div>
+ 				<!-- end of upper part container -->
+
  			</div>
+ 			<!-- end of upper part of screen -->
 
  			<!-- lower part of screen -->
  			<div id="mission-lower" class="col-lg-12">
@@ -170,68 +162,142 @@
  		<!-- end of mission -->
 
  		<!-- services -->
- 		<div id="services" class="row no-gutters">
+ 		<div id="services">
+ 			<!-- start of row -->
+	 		<div class="row no-gutters">
 
- 			<!-- Direct selling of products -->
- 			<div id="business" class="col-12 col-md-12 col-lg-4">
- 				<div class="card">
- 					<img class="card-img-top" src="assets/images/about/services-img-1.jpeg">
+	 			<!-- Direct selling of products -->
+	 			<div id="business" class="col-12 col-md-12 col-lg-4">
+	 				<!-- card -->
+	 				<div class="card">
+	 					<img class="card-img-top" src="assets/images/about/services-img-1.jpeg">
 
- 					<div class="card-body">
- 						<h3 class="card-title text-center">
- 							Business Solutions
- 						</h3>
- 						<p class="card-text text-center">
- 							This hammer is a hammer
- 						</p>
- 						<button class="btn btn-primary btn-block" onclick="showbs()"> See More </button>
- 						<button class="btn btn-primary btn-block buttonhide" onclick="hidebs()"> See Less </button>
- 					</div>
- 				</div>
- 			</div>
+	 					<div class="card-body">
+	 						<h3 class="card-title text-center">
+	 							Business Solutions
+	 						</h3>
+	 						<p class="card-text text-center">
+	 							This hammer is a hammer
+	 						</p>
+	 						<button class="btn btn-primary btn-block" onclick="showbs()"> See More </button>
+	 						<button id="button-1" class="btn btn-primary btn-block" onclick="hidebs()"> See Less </button>
+	 					</div>
+	 				</div> <!-- end of card -->
 
- 			<!-- Modification of products -->
- 			<div id="modif" class="col-12 col-md-12 col-lg-4">
-  				<div class="card">
- 					<img class="card-img-top" src="assets/images/about/services-img-1.jpeg">
+	 			</div>
+	 			<!-- end of business col -->
 
- 					<div class="card-body">
- 						<h3 class="card-title text-center">
- 							Software Modification
- 						</h3>
- 						<p class="card-text text-center">
- 							This hammer is a hammer
- 						</p>
- 						<button class="btn btn-primary btn-block"> See More </button>
- 					</div>
- 				</div>
- 			</div>
+	 			<!-- Modification of products -->
+	 			<div id="modif" class="col-12 col-md-12 col-lg-4">
 
- 			<!-- support -->
- 			<div id="supp" class="col-12 col-md-12 col-lg-4">
- 				<div class="card">
- 					<img class="card-img-top" src="assets/images/about/services-img-1.jpeg">
+	 				<!-- card -->
+	  				<div class="card">
+	 					<img class="card-img-top" src="assets/images/about/services-img-1.jpeg">
 
- 					<div class="card-body">
- 						<h3 class="card-title text-center">
- 							Support
- 						</h3>
- 						<p class="card-text text-center">
- 							This hammer is a hammer
- 						</p>
- 						<button class="btn btn-primary btn-block"> See More </button>
- 					</div>
- 				</div>
+	 					<div class="card-body">
+	 						<h3 class="card-title text-center">
+	 							Join us!
+	 						</h3>
+	 						<p class="card-text text-center">
+	 							This hammer is a hammer
+	 						</p>
+	 						<button class="btn btn-primary btn-block" onclick="showsm()"> See More </button>
+	 						<button id="button-2" class="btn btn-primary btn-block" onclick="hidesm()"> See Less </button>
 
- 			</div>
+	 					</div>
+	 				</div> <!-- end of card -->
+	 			</div> <!-- end of modif -->
 
- 			<!-- modals section -->
+	 			<!-- support -->
+	 			<div id="supp" class="col-12 col-md-12 col-lg-4">
+	 				<!-- card -->
+	 				<div class="card">
+	 					<img class="card-img-top" src="assets/images/about/services-img-1.jpeg">
 
- 			<!-- end of modals section -->
+	 					<div class="card-body">
+	 						<h3 class="card-title text-center">
+	 							Support
+	 						</h3>
+	 						<p class="card-text text-center">
+	 							This hammer is a hammer
+	 						</p>
+	 						<button class="btn btn-primary btn-block" onclick="showsp()"> See More </button>
+	 						<button id="button-3" class="btn btn-primary btn-block" onclick="hidesp()"> See Less </button>
 
+	 					</div>
+	 				</div> <!-- end of card -->
+	 			</div>
+	 			<!-- end of support -->
 
+	 			<!-- start of services-content -->
+	 			<div id="business-content" class="col-12 col-md-12 col-lg-8">
+		 				<header>
+		 					<h1> Business asdasd </h1>
+		 				</header>
+
+		 				<p>
+		 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		 					consequat.
+		 				</p>
+	 			</div>
+
+	 			<div id="joinus-content" class="col-12 col-md-12 col-lg-8">
+		 				<header>
+		 					<h1> Join us! asdasd </h1>
+		 				</header>
+
+		 				<form>
+		 					<div class="form-group">
+		 						<label for="email"> Email: </label>
+
+		 						<input id="email" class="form-control" type="email" placeholder="Enter Your Email Here" required></input>
+		 					</div>
+
+		 					<div class="form-group">
+
+								<label for="contact"> Contact Number: </label>
+
+								<input id="contact" class="form-control" type="number" placeholder="Enter Your Contact contact Here" required></input>
+
+							</div>
+
+							<div class="form-group">
+								
+								<label for="message"> Why should we hire you: </label>
+
+								<textarea id="message" class="form-control" placeholder="<Position You're Applying For> <Qualifications>"></textarea>
+
+							</div>
+
+							<button class="btn btn-block btn-success"> Submit </button>
+		 				</form>
+	 			</div>
+
+	 			<div id="support-content" class="col-12 col-md-12 col-lg-8">
+		 				<header>
+		 					<h1> Support asdasd </h1>
+		 				</header>
+
+		 				<p>
+		 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		 					consequat.
+		 				</p>
+	 			</div>
+	 			<!-- modals section -->
+
+	 			<!-- end of modals section -->
+	 		</div>
  		</div>
  		<!-- end of services -->
+
+ 		<!-- footer -->
+ 		<footer class="footer bg-primary">
+			<p class="text-center mb-0 p-3"> Lester Gamier | Tuitt Coding Bootcamp </p>
+		</footer>
 
 	</div>
 	<!-- end of container fluid -->
@@ -246,6 +312,7 @@
 	<!-- end of bootstrap js -->
 
 	<script type="text/javascript">
+		// testing
 		document.getElementById("zz2").addEventListener("mouseover", colchange);
 		document.getElementById("zz2").addEventListener("mouseout", colreturn);
 
@@ -256,6 +323,7 @@
 		function colreturn() {
 		    document.getElementById("zz1").style.backgroundColor = "red";
 		}
+		// end of testing
 
 		document.getElementById("zz1").addEventListener("mouseover", showMission);
 
@@ -288,14 +356,47 @@
 			document.getElementById("business").style.display = "block";
 			document.getElementById("modif").style.display = "none";
 			document.getElementById("supp").style.display = "none";
-			document.getElementsByClassName("buttonhide").style.display = "block";
+			document.getElementById("button-1").style.display = "block";
+			document.getElementById("business-content").style.display = "block";
 		}
 		function hidebs() {
 			document.getElementById("business").style.display = "block";
 			document.getElementById("modif").style.display = "block";
 			document.getElementById("supp").style.display = "block";
-			document.getElementsByClassName("buttonhide").style.display = "none";
+			document.getElementById("button-1").style.display = "none";
+			document.getElementById("business-content").style.display = "none";
 
+		}
+
+		function showsm() {
+			document.getElementById("business").style.display = "none";
+			document.getElementById("modif").style.display = "block";
+			document.getElementById("supp").style.display = "none";
+			document.getElementById("button-2").style.display = "block";
+			document.getElementById("joinus-content").style.display = "block";
+		}
+		function hidesm() {
+			document.getElementById("business").style.display = "block";
+			document.getElementById("modif").style.display = "block";
+			document.getElementById("supp").style.display = "block";
+			document.getElementById("button-2").style.display = "none";
+			document.getElementById("joinus-content").style.display = "none";
+
+		}
+
+		function showsp() {
+			document.getElementById("business").style.display = "none";
+			document.getElementById("modif").style.display = "none";
+			document.getElementById("supp").style.display = "block";
+			document.getElementById("button-3").style.display = "block";
+			document.getElementById("support-content").style.display = "block";
+		}
+		function hidesp() {
+			document.getElementById("business").style.display = "block";
+			document.getElementById("modif").style.display = "block";
+			document.getElementById("supp").style.display = "block";
+			document.getElementById("button-3").style.display = "none";
+			document.getElementById("support-content").style.display = "none";
 		}
 		// business modif supp
 	</script>
