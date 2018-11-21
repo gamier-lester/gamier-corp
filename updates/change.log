@@ -45,3 +45,17 @@ home.html
 -fixed home page
 -insert navigation bar
 -insert "about the stars section"
+
+10:43am
+create about.hmtl
+-insert carousel at landing point
+-fixed navbar
+-insert about the company section:
+	mission
+	vision
+-insert javascript for events in company section
+-start creating services section
+-ongoing creation of javascript function for cards in the services section
+
+style.css
+-insert design for about.html

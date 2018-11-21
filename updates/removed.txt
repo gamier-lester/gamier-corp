@@ -1,0 +1,36 @@
+
+.mission {
+	background-color: red;
+	/*height: 100%; dont add this*/
+	height: 50vh;
+	max-width: 40vh;
+	min-width: 40vh;
+	margin-left: 100px;
+}
+
+.mission h1 {
+	/*border: 1px solid blue;*/
+	
+	line-height: 50vh;
+	letter-spacing: 10px;
+}
+
+.vision h1 {
+	/*border: 1px solid blue;*/
+	background-color: blue;
+	height: 50vh;
+	line-height: 50vh;
+	letter-spacing: 10px;
+}
+
+
+#mission > #mission-upper h1 {
+	width: 50%;
+	text-align: center;
+	margin: 0;
+	float: left;
+	/*margin-top: 10%;*/
+	/*background-color: red;*/
+	/*height: 100%;*/
+	/*padding: 5%;*/
+}

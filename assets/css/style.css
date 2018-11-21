@@ -237,7 +237,9 @@ html {
 	padding: 5%;
 }
 
-#services {
+/*edit 11212018 because of conflict with about.html services page*/
+/*#services {*/
+#servicesss {
 	min-height: 50vh;
 	/*border: 2px solid red;*/
 	/*height: 400px;*/
@@ -246,7 +248,8 @@ html {
 	/*line-height: 400px;*/
 }
 
-#services h1 {
+/*#services h1 {*/
+#servicesss h1 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -254,6 +257,9 @@ html {
 	border: solid 7px red;
 	padding: 5%;
 }
+
+/*end of edit 11212018 because of conflict with about.html services page*/
+
 /*
 #qwe {
 	padding: 20%;
@@ -351,3 +357,142 @@ html {
 	}
 }
 /*end of custom styling for home page*/
+
+
+/*custom styling for about page*/
+
+#about-landing {
+	/*border: 1px solid red;*/
+	max-height: 91.7vh;
+}
+
+#about-landing img {
+	min-height: 91.7vh;
+	max-height: 91.7vh;
+}
+
+
+#mission-upper {
+	max-height: 50vh;
+	min-width: 100%;
+}
+
+#mission-lower {
+	/*border: 1px solid red;*/
+	min-height: 50vh;
+	max-height: 50vh;
+	background-color: violet;
+	overflow-y: hidden;
+}
+
+#zz1 {
+	height: 50vh;
+	width: 50%;
+	background-color: red;	
+}
+
+#zz1 h1 {
+	line-height: 50vh;
+}
+
+#zz2 {
+	height: 50vh;
+	width: 50%;
+	background-color: blue;
+}
+
+#zz2 h1 {
+	line-height: 50vh;
+}
+
+/*#zxc:hover ~ #cxz {
+	background-color: black;
+}
+*/
+#zz1:hover ~ #zz2 {
+	background-color: black;
+}
+
+#zz2 ~ div[id="zz1"] {
+	background-color: black;
+}
+
+#mission-message {
+	display: none;
+}
+
+#vision-message {
+	display: none;
+}
+
+#company-name,
+#mission-message,
+#vision-message {
+	/*text-align: center;*/
+	/*line-height: 50vh;*/
+	/*padding: 125px;*/
+	/*background-color: red;*/
+/*	width: 60%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 2px solid grey;*/
+	width: 100%;
+	text-align: center;
+	/*line-height: 40vh;*/
+}
+
+#company-name {
+	line-height: 40vh;
+}
+
+#mission-message,
+#vision-message {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 75%;
+	transform: translate(-50%, -50%);
+	overflow-y: hidden;
+	font-size: 20px;
+}
+
+#display-holder {
+	height: 40vh;
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 2px solid grey;
+}
+@media only screen and (max-width: 400px) {
+	#company-name,
+	#mission-message,
+	#vision-message {
+		font-size: 15px;
+	}
+
+	#mission-message,
+	#vision-message {
+		max-height: 30vh;
+		line-height: 3vh;
+	}
+}
+
+
+/*#mission-upper > */
+/*end of custom styling for about page*/
+
+/*custom styling for services section*/
+
+#servicess {
+	min-height: 100vh;
+}
+
+.buttonhide {
+	display: none;
+}
+
+/*end of custom styling for services section*/
