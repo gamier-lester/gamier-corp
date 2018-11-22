@@ -2,6 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	/*transition: all 2s ease;*/
+	transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;
 }
 
 
@@ -11,7 +13,13 @@ html {
 }
 /*custom style of landing page*/
 
-#landing {
+#index-start,
+#index-center,
+#index-end {
+	height: 33%;
+}
+
+#index-landing {
 	height: 100vh;
 	background-image: url(../images/index/bg.jpg);
 	background-attachment: fixed;
@@ -21,35 +29,18 @@ html {
 	overflow: hidden;
 }
 
-/*#landing > .row > #start2 {
-	width: 400px;
-	margin: 0 0;
-	position: absolute;
-	top: 70%;
-	color: white;
+#index-landing > .row {
+	min-height: 0;
 }
 
-#landing > .row > #start2 > h1 {
-	letter-spacing: 15px;
+#index-start a {
+	line-height: 30vh;
 }
 
-#landing > .row > #start {
-	margin: 0;
-	padding: 0;
-	width: 150px;
-	top: 80%;
-	left: 80%;
-	border: 2px solid red;
-	height: 70px;
-	line-height: 70px;
-	text-align: center;
+#index-center a {
+	/*min-height: 35vh;*/
+	line-height: 35vh;
 }
-
-#landing > .row > #start > a {
-	text-decoration: none;
-	color: white;
-}
-*/
 
 .emp {
 	border: 1px solid transparent;
@@ -69,6 +60,11 @@ html {
 	min-height: 33vh;
 }
 
+#start2 h1 {
+	width: 100%;
+	word-wrap: break-word;
+}
+
 #start a {
 	text-decoration: none;
 	color: white;
@@ -77,26 +73,7 @@ html {
 	line-height: 200px;
 }
 
-/*-------------------------*/
-.per30 {
-	height: 30%;
-	background-color: black;
-}
 
-.per30:after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-/*-------------------------*/
-
-/*#landing > .row a {
-	text-decoration: none;
-	color: white;
-	display: block;
-}
-*/
 .surprise a {
 	text-decoration: none;
 	/*color: white;*/
@@ -115,93 +92,27 @@ html {
 
 /*custom styling of landing page for different screenviews*/
 
-/*@media only screen and (max-height: 640px){
-	#start2 > p {
-		margin-bottom: 0;
-	}
-
-	.fw {
-		min-height: 75px;
-	}
-
-	#start {
-		clear: both;
-	}
-
+@media only screen and (max-width: 500px) {
 	#start > a {
 		line-height: 16px;
 	}
-	#raeppasid {
+
+	#index-start {
 		display: none;
-		background-color: red;
+	}
+
+	#index-center {
+		display: none;
 	}
 }
 
-@media only screen and (max-height: 731px){
-	#start2 > p {
-		margin-bottom: 0;
-	}
-
-	.fw {
-		min-height: 100px;
-	}
-
-	#start {
-		clear: both;
-	}
-
-	#start > a {
-		line-height: 16px;
-	}
-	#raeppasid {
-		display: none;
-		background-color: red;
+@media only screen and (min-width: 800px) {
+	.emp {
+		min-height: 30vh;
 	}
 }
 
-@media only screen and (max-height: 823px){
-	#start2 > p {
-		margin-bottom: 0;
-	}
 
-	.fw {
-		min-height: 120px;
-	}
-
-	#start {
-		clear: both;
-	}
-
-	#start > a {
-		line-height: 16px;
-	}
-	#raeppasid {
-		display: none;
-		background-color: red;
-	}
-}
-
-@media only screen and (max-height: 667px){
-	#start2 > p {
-		margin-bottom: 0;
-	}
-
-	.fw {
-		min-height: 60px;
-	}
-
-	#start {
-		clear: both;
-	}
-
-	#start > a {
-		line-height: 16px;
-	}
-	#raeppasid {
-		display: none;
-		background-color: red;
-	}
-}*/
 /*end of landing page styles*/
 
 /*custom styling of home page*/
@@ -270,6 +181,8 @@ html {
 
 .row {
 	min-height: 100vh;
+	margin: 0;
+	padding: 0;
 }
 
 #home-slogan {
@@ -324,6 +237,8 @@ html {
 }
 
 #stars > div[class*="col"] > #stars-left {
+	/*background-color: red;*/
+	/*background-image: url(assets/images/home/bg.jpg);*/
 	max-width: 50%;
 	min-height: 125%;
 	overflow-y: hidden;
@@ -332,6 +247,22 @@ html {
 	top: 20%;
 	z-index: 2;
 	line-height: 30px;
+}
+
+#stars-II-container {
+	/*background-color: red;*/
+	background-image: url(../images/home/bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+#stars-I-container {
+	/*background-color: red;*/
+	background-image: url(../images/home/bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
 }
 
 #stars > div[class*="col"] > #stars-right {
@@ -385,36 +316,24 @@ html {
 	overflow-y: hidden;
 }
 
-#zz1 {
+#mission-text {
 	height: 50vh;
 	width: 50%;
 	background-color: red;	
 }
 
-#zz1 h1 {
+#mission-text h1 {
 	line-height: 50vh;
 }
 
-#zz2 {
+#vision-text {
 	height: 50vh;
 	width: 50%;
 	background-color: blue;
 }
 
-#zz2 h1 {
+#vision-text h1 {
 	line-height: 50vh;
-}
-
-/*#zxc:hover ~ #cxz {
-	background-color: black;
-}
-*/
-#zz1:hover ~ #zz2 {
-	background-color: black;
-}
-
-#zz2 ~ div[id="zz1"] {
-	background-color: black;
 }
 
 #mission-message {
@@ -482,32 +401,23 @@ html {
 }
 
 
-/*#mission-upper > */
+
+
 /*end of custom styling for about page*/
 
 /*custom styling for services section*/
 
 #services {
 	/*min-height: 100vh;*/
-	max-height: 93vh;
+	/*max-height: 100vh;*/
 	/*height: 100%;*/
 	overflow-y: hidden;
 }
 
 #services .card {
-	max-height: 100vh;
-}
-#business {
-	max-height: 20vh;
+	max-height: 100%;
 }
 
-#modif {
-	max-height: 20vh;
-}
-
-#supp {
-	max-height: 10vh;
-}
 #button-1 {
 	display: none;
 }
@@ -521,9 +431,12 @@ html {
 }
 
 #business-content {
-	display: none;
+	/*display: none;*/
 	margin-top: 10%;
 	padding: 0 10px;
+	visibility: hidden;
+	height: 0;
+	width: 0;
 }
 
 #joinus-content {
@@ -538,6 +451,14 @@ html {
 	padding: 0 10px;
 }
 
+#about-page {
+	/*overflow-y: hidden;*/
+}
+#about-page ~ footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
 /*end of custom styling for services section*/
 
 /*contact us page*/

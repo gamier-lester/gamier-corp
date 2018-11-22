@@ -4,10 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<title> Lester Jan Gamier | Full Stack Developer </title>
+	<title> GAMIER CORP | ABOUT US! </title>
 
 	<!-- fontawesom icons -->
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<!-- animate css -->
 	<!-- animate css from danedan -->
@@ -18,12 +18,16 @@
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+	<style type="text/css">
+		#modif {transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;}
+}
+	</style>
 
 </head>
 <body>
 
 	<!-- container fluid -->
-	<div class="container-fluid px-0">
+	<div id="about-page" class="container-fluid px-0 py-0">
 		
 		<!-- landing -->
 		<!-- carousel -->
@@ -75,7 +79,7 @@
 		<!-- end of landing page -->
 
 		<!-- start of nav -->
-		<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+		<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-dark sticky-top py-0">
  			
  			<a class="navbar-brand" href="home.html">
 				<i class="far fa-hand-peace"></i> Company Name
@@ -100,6 +104,18 @@
 						</a>
 					</li>
 
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">
+							Contact
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="gallery.html">
+							Gallery
+						</a>
+					</li>
+
 				</ul>
 			</div>
 
@@ -115,16 +131,16 @@
  			<div id="mission-upper" class="col-lg-12">
 
  				<!-- start of upper part container -->
- 				<div class="container-fluid">
+ 				<div class="container-fluid px-0">
  					<div class="row">
 
- 						<div id="zz1" class="col-lg-6">
+ 						<div id="mission-text" class="col-lg-6">
  							<h1 class="text-center animated flip">
  								MISSION
  							</h1>
  						</div>
 
- 						<div id="zz2" class="col-lg-6">
+ 						<div id="vision-text" class="col-lg-6">
  							<h1 class="text-center animated bounce">
  								VISION
  							</h1>
@@ -142,14 +158,9 @@
  				<div id="display-holder">
  					
 	 				
-	 				<p id="mission-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	 				consequat.</p>
+	 				<p id="mission-message"> To establish an invisible bridge that connects businesses globally, which will allow all people of all countries and regions to be united and move forward to the age of technology </p>
 
-	 				<p id="vision-message">
-	 					Lorem ipsum keme keme keme 48 years jowabelles na ang bakit matod shonga-shonga jowabelles pranella pinkalou jutay at kasi oblation ano kasi bakit na keme at dites borta at ang chipipay pamin at ang kemerloo jongoloids conalei oblation
-	 				</p>
+	 				<p id="vision-message"> We can't spell s_ccess without 'u' </p>
 	 				<h1 id="company-name">
 	 					MY COMPANY NAME
 	 				</h1>
@@ -162,7 +173,7 @@
  		<!-- end of mission -->
 
  		<!-- services -->
- 		<div id="services">
+ 		<div id="services" class="container-fluid">
  			<!-- start of row -->
 	 		<div class="row no-gutters">
 
@@ -177,9 +188,10 @@
 	 							Business Solutions
 	 						</h3>
 	 						<p class="card-text text-center">
-	 							This hammer is a hammer
+	 							Become our client today!
 	 						</p>
-	 						<button class="btn btn-primary btn-block" onclick="showbs()"> See More </button>
+	 						<button id="button-try" class="btn btn-primary btn-block"> See More </button>
+	 						<!-- onclick="showbs()" -->
 	 						<button id="button-1" class="btn btn-primary btn-block" onclick="hidebs()"> See Less </button>
 	 					</div>
 	 				</div> <!-- end of card -->
@@ -199,7 +211,7 @@
 	 							Join us!
 	 						</h3>
 	 						<p class="card-text text-center">
-	 							This hammer is a hammer
+	 							Discover the opportunities waiting for you.
 	 						</p>
 	 						<button class="btn btn-primary btn-block" onclick="showsm()"> See More </button>
 	 						<button id="button-2" class="btn btn-primary btn-block" onclick="hidesm()"> See Less </button>
@@ -219,7 +231,7 @@
 	 							Support
 	 						</h3>
 	 						<p class="card-text text-center">
-	 							This hammer is a hammer
+	 							On-site Support | Online Support
 	 						</p>
 	 						<button class="btn btn-primary btn-block" onclick="showsp()"> See More </button>
 	 						<button id="button-3" class="btn btn-primary btn-block" onclick="hidesp()"> See Less </button>
@@ -231,16 +243,26 @@
 
 	 			<!-- start of services-content -->
 	 			<div id="business-content" class="col-12 col-md-12 col-lg-8">
-		 				<header>
-		 					<h1> Business asdasd </h1>
+		 				<header style="background-color: red">
+		 					<h1> Gamier Corp. | Inquiries </h1>
 		 				</header>
 
+		 				<section>
+		 				<h3> You think, we create! </h3>
 		 				<p>
-		 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		 					consequat.
+		 					We are offer low-price softwares or even create new ones that will fit to your taste.
 		 				</p>
+		 				</section>
+		 				
+		 				<hr>
+
+		 				<section>
+		 				<h3> Exclusive use of softwares? </h3>
+		 				<p>
+		 					We also offer software modification for existing softwares that you want to use exclusively
+		 				</p>
+		 				</section>
+		 				<button class="btn btn-block"> Contact Us!</button>
 	 			</div>
 
 	 			<div id="joinus-content" class="col-12 col-md-12 col-lg-8">
@@ -277,15 +299,15 @@
 
 	 			<div id="support-content" class="col-12 col-md-12 col-lg-8">
 		 				<header>
-		 					<h1> Support asdasd </h1>
+		 					<h1> Support </h1>
 		 				</header>
 
 		 				<p>
-		 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		 					consequat.
+		 					Being partners with us comes with great deals and priveledges. Support will always be availably 24/7 <mark>free</mark>.
 		 				</p>
+		 				<p>Yes. It's free</p>
+
+		 				<p> We offer on-site services and also online service support for clients that is located on remote places </p>
 	 			</div>
 	 			<!-- modals section -->
 
@@ -300,6 +322,9 @@
 		</footer>
 
 	</div>
+	<!-- <footer class="footer bg-primary">
+			<p class="text-center mb-0 p-3"> Lester Gamier | Tuitt Coding Bootcamp </p>
+	</footer> -->
 	<!-- end of container fluid -->
 
 
@@ -313,24 +338,24 @@
 
 	<script type="text/javascript">
 		// testing
-		document.getElementById("zz2").addEventListener("mouseover", colchange);
-		document.getElementById("zz2").addEventListener("mouseout", colreturn);
+		document.getElementById("vision-text").addEventListener("mouseover", colchange);
+		document.getElementById("vision-text").addEventListener("mouseout", colreturn);
 
 		function colchange() {
-		    document.getElementById("zz1").style.backgroundColor = "black";
+		    document.getElementById("mission-text").style.backgroundColor = "black";
 		}
 
 		function colreturn() {
-		    document.getElementById("zz1").style.backgroundColor = "red";
+		    document.getElementById("mission-text").style.backgroundColor = "red";
 		}
 		// end of testing
 
-		document.getElementById("zz1").addEventListener("mouseover", showMission);
+		document.getElementById("mission-text").addEventListener("mouseover", showMission);
 
-		document.getElementById("zz2").addEventListener("mouseover", showVision);
-		document.getElementById("zz1").addEventListener("mouseout", mouseexit);
+		document.getElementById("vision-text").addEventListener("mouseover", showVision);
+		document.getElementById("mission-text").addEventListener("mouseout", mouseexit);
 
-		document.getElementById("zz2").addEventListener("mouseout", mouseexit);
+		document.getElementById("vision-text").addEventListener("mouseout", mouseexit);
 
 		function showMission() {
 			document.getElementById("mission-message").style.display = "block";
@@ -352,13 +377,13 @@
 			document.getElementById("mission-lower").style.backgroundColor = "violet"
 		}
 
-		function showbs() {
-			document.getElementById("business").style.display = "block";
-			document.getElementById("modif").style.display = "none";
-			document.getElementById("supp").style.display = "none";
-			document.getElementById("button-1").style.display = "block";
-			document.getElementById("business-content").style.display = "block";
-		}
+		// function showbs() {
+		// 	document.getElementById("business").style.display = "block";
+		// 	document.getElementById("modif").style.display = "none";
+		// 	document.getElementById("supp").style.display = "none";
+		// 	document.getElementById("button-1").style.display = "block";
+		// 	document.getElementById("business-content").style.display = "block";
+		// };
 		function hidebs() {
 			document.getElementById("business").style.display = "block";
 			document.getElementById("modif").style.display = "block";
@@ -370,7 +395,8 @@
 
 		function showsm() {
 			document.getElementById("business").style.display = "none";
-			document.getElementById("modif").style.display = "block";
+			// document.getElementById("modif").style.display = "block";
+			document.getElementById("modif").style.visibility = "hidden";
 			document.getElementById("supp").style.display = "none";
 			document.getElementById("button-2").style.display = "block";
 			document.getElementById("joinus-content").style.display = "block";
@@ -398,7 +424,111 @@
 			document.getElementById("button-3").style.display = "none";
 			document.getElementById("support-content").style.display = "none";
 		}
-		// business modif supp
+
+		function displaynomore() {
+			var modif = document.getElementById('modif');
+			var supp = document.getElementById('supp');
+
+			modif.style.display = "none";
+		    supp.style.display = "none";
+
+		}
+
+		function displaynomoremessage() {
+			var modif = document.getElementById('modif');
+			var supp = document.getElementById('supp');
+			var businesscon = document.getElementById('business-content')
+
+			modif.style.display = "block";
+		    supp.style.display = "block";
+		    businesscon.style.display = "none";
+
+		}
+
+		function displaymessage() {
+			var businesscon = document.getElementById('business-content');
+			businesscon.style.display = "block";
+		}
+
+		var btn = document.getElementById('button-try');
+		var modif = document.getElementById('modif');
+		var supp = document.getElementById('supp');
+		var heightm = modif.clientHeight;
+		var widthm = modif.clientWidth;
+		var heights = supp.clientHeight;
+		var widths = supp.clientWidth;
+
+		var businesscon = document.getElementById('business-content');
+		var heightb = businesscon.clientHeight;
+		var widthb = businesscon.clientWidth;
+		// console.log(width + 'x' + height);
+		// initialize them (within hint.style)
+		modif.style.height = heightm + 'px';
+		modif.style.width = widthm + 'px';
+		supp.style.height = heights + 'px';
+		supp.style.width = widths + 'px';
+		businesscon.style.height = heightb + 'px';
+		businesscon.style.width = widthb + 'px';
+
+		btn.addEventListener('click', function(){
+		  if(modif.style.visibility == 'hidden' && supp.style.visibility == 'hidden'){
+		    modif.style.visibility = 'visible';
+		    supp.style.visibility = 'visible';
+		    //hint.style.opacity = '1';
+		    modif.style.height = '100%';
+		    modif.style.width = '100%';
+		    modif.style.padding = '0';
+		    supp.style.height = '100%';
+		    supp.style.width = '100%';
+		    supp.style.padding = '.5em';
+
+		    businesscon.style.height = '0';
+			businesscon.style.width = '0';
+		  } else if (modif.style.display == 'none' && supp.style.display == 'none'){
+		  	modif.style.visibility = 'visible';
+		    supp.style.visibility = 'visible';
+		  	modif.style.display = 'block';
+		    supp.style.display = 'block';
+		    businesscon.style.height = '0';
+			businesscon.style.width = '0';
+			businesscon.style.visibility = 'hidden';
+			setTimeout(displaynomoremessage, 1000);
+
+			modif.style.height = '100%';
+		    modif.style.width = '100%';
+		    modif.style.padding = '0';
+		    supp.style.height = '100%';
+		    supp.style.width = '100%';
+		    supp.style.padding = '0';
+		  }
+		  else {
+		    modif.style.visibility = 'hidden';
+		    supp.style.visibility = 'hidden';
+		    //hint.style.opacity = '0';
+		    modif.style.height = '0';
+		    modif.style.width = '0';
+		    modif.style.padding = '0';
+		    supp.style.height = '0';
+		    supp.style.width = '0';
+		    supp.style.padding = '0';
+
+		    // modif.style.opacity = '0';
+		    // supp.style.opacity = '0';
+
+		    
+
+		    businesscon.style.visibility = 'visible'
+		    businesscon.style.height = '100%';
+			businesscon.style.width = '100%';
+
+			//try remove display property
+		    setTimeout(displaynomore, 1000);
+		    setTimeout(displaymessage, 1000);
+
+		  }
+
+		});
+
 	</script>
 </body>
 </html>
