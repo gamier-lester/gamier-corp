@@ -67,9 +67,7 @@ html {
 	max-width: 75%;
 	text-align: center;
 	margin: 0 auto;
-	/*position: absolute;*/
-	/*transparent background works on cards*/
-	/*background-color: transparent;*/
+	margin-bottom: 5%;
 }
 /*end of promotions*/
 
@@ -93,11 +91,10 @@ html {
 #home-content-marketing {
 	background-color: pink;
 	padding: 5%;
-	/*text-align: right;*/
 }
 
 #home-content-marketing h2 {
-	/*text-align: right;*/
+	text-align: right;
 }
 #home-content-marketing p {
 	width: 100%;
@@ -106,13 +103,7 @@ html {
 #marketing-right-text p {
 	width: 100%;
 }
-/*#home-content-marketing p,
-#home-content-marketing h2 {
-	float: right;
-	text-align: right;
-	clear: both;
-}
-*/
+
 #home-content-hr {
 	background-color: orange;
 	padding: 5%;
@@ -122,3 +113,15 @@ html {
 /*end of home-contents*/
 
 /*end of home-body styles*/
+
+/*custom styling for about page*/
+
+#about-landing {
+	height: 100vh;
+}
+#carousel-about img{
+	max-height: 100vh;
+	width: 100%;
+}
+
+/*end of custom styling for about page*/
