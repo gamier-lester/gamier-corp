@@ -1,0 +1,124 @@
+/*reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+
+/*custom styling for home page*/
+
+/*home-landing styles*/
+
+#home-landing {
+	min-height: 100vh;
+}
+
+#home-landing-upper {
+	height: 50vh;
+	border: 1px solid red;
+	/*z-index: -1;*/
+}
+
+#home-landing-lower {
+	height: 50vh;
+	border: 1px solid blue;
+	/*z-index: -1;*/
+}
+
+#home-landing-slogan{
+	/*height: 50vh;*/
+	/*width: 50vh;*/
+	background-color: transparent;
+	padding: 10%;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	text-align: center;
+}
+
+/*end of home-landing styles*/
+
+
+/*home-body styles*/
+
+/*home-promotions*/
+
+#home-promo {
+	background-color: violet;
+	position: relative;
+}
+
+#home-promo div[id*='col-'] {
+	text-align: center;
+	padding: 0;
+	/*margin: 0 auto;*/
+}
+	
+#home-promo div[id*='card-'] {
+	min-height: 400px;
+	max-width: 75%;
+	text-align: center;
+	margin: 0 auto;
+	/*position: absolute;*/
+	/*transparent background works on cards*/
+	/*background-color: transparent;*/
+}
+/*end of promotions*/
+
+/*home-contents*/
+#home-content > div[id*='home-content-operations'] p,
+#home-content > div[id*='home-content-hr'] p {
+	width: 60%;
+}
+
+#home-content-operations {
+	background-color: indianred;
+	padding: 5%;
+}
+
+.content-container {
+	border: solid 2px black;
+	padding: 10px;
+	background-color: grey;
+}
+
+#home-content-marketing {
+	background-color: pink;
+	padding: 5%;
+	/*text-align: right;*/
+}
+
+#home-content-marketing h2 {
+	/*text-align: right;*/
+}
+#home-content-marketing p {
+	width: 100%;
+}
+
+#marketing-right-text p {
+	width: 100%;
+}
+/*#home-content-marketing p,
+#home-content-marketing h2 {
+	float: right;
+	text-align: right;
+	clear: both;
+}
+*/
+#home-content-hr {
+	background-color: orange;
+	padding: 5%;
+}
+
+
+/*end of home-contents*/
+
+/*end of home-body styles*/
