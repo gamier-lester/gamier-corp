@@ -1,0 +1,529 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*transition: all 2s ease;*/
+	transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;
+}
+
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+/*custom style of landing page*/
+
+#index-start,
+#index-center,
+#index-end {
+	height: 33%;
+}
+
+#index-landing {
+	height: 100vh;
+	background-image: url(../images/index/bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+}
+
+#index-landing > .row {
+	min-height: 0;
+}
+
+#index-start a {
+	line-height: 30vh;
+}
+
+#index-center a {
+	/*min-height: 35vh;*/
+	line-height: 35vh;
+}
+
+.emp {
+	border: 1px solid transparent;
+	min-height: 33vh;
+	/*display: block;*/
+}
+
+.fw {
+	min-height: 100px;
+	background-color: red;
+	opacity: 0;
+}
+
+#start2 {
+	color: white;
+	padding: 15px;
+	min-height: 33vh;
+}
+
+#start2 h1 {
+	width: 100%;
+	word-wrap: break-word;
+}
+
+#start a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	display: block;
+	line-height: 200px;
+}
+
+
+.surprise a {
+	text-decoration: none;
+	/*color: white;*/
+	color: transparent;
+	display: block;
+	letter-spacing: 5px;
+	padding: 0;
+	font-size: 50px;
+	line-height: 150px;
+	min-height: 150px;
+}
+
+.surprise a:hover {
+	color: white;
+}
+
+/*custom styling of landing page for different screenviews*/
+
+@media only screen and (max-width: 500px) {
+	#start > a {
+		line-height: 16px;
+	}
+
+	#index-start {
+		display: none;
+	}
+
+	#index-center {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.emp {
+		min-height: 30vh;
+	}
+}
+
+
+/*end of landing page styles*/
+
+/*custom styling of home page*/
+/*.container*/
+
+#home {
+	background-image: url(../images/home/bg.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	
+}
+
+#slogan {
+	min-height: 50vh;
+	/*width: 100%;*/
+	margin: 0;
+	padding: 0;
+	color: red;
+	/*width: 100%;*/
+	background-color: black;
+	text-align: center;
+	/*line-height: 400px;*/
+}
+
+#slogan h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border: solid 7px red;
+	padding: 5%;
+}
+
+/*edit 11212018 because of conflict with about.html services page*/
+/*#services {*/
+#servicesss {
+	min-height: 50vh;
+	/*border: 2px solid red;*/
+	/*height: 400px;*/
+	color: grey;
+	text-align: center;
+	/*line-height: 400px;*/
+}
+
+/*#services h1 {*/
+#servicesss h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border: solid 7px red;
+	padding: 5%;
+}
+
+/*end of edit 11212018 because of conflict with about.html services page*/
+
+/*
+#qwe {
+	padding: 20%;
+	text-align: center;
+	background-color: red;
+}
+*/
+
+.row {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+#home-slogan {
+	background-image: url(../images/home/bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#slogan-up {
+	min-height: 50vh;
+	background-color: black;
+}
+
+#slogan-up > h1 {
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	transform: translate(-50%, -50%);
+	background-color: red;
+	padding: 10%;
+	box-shadow: 8px 5px 15px blue;
+}
+
+#slogan-down {
+	min-height: 50vh;
+}
+
+[class*="col"] {
+	padding: 0;
+}
+
+
+/*navigation*/
+#navbar {
+	min-width: 100%;
+	/*overflow-x: hidden;*/
+}
+
+#aaa {
+	padding: 0;
+	margin: 0;
+	/*removes the white space in the navbar, but removes it's sticky effect*/
+	/*overflow-x: hidden;*/
+}
+
+/*stars*/
+#stars > div[class*="col"]{
+	/*border: 1px solid violet;*/
+	min-height: 50vh;
+}
+
+#stars > div[class*="col"] > #stars-left {
+	/*background-color: red;*/
+	/*background-image: url(assets/images/home/bg.jpg);*/
+	max-width: 50%;
+	min-height: 125%;
+	overflow-y: hidden;
+	position: absolute;
+	left: 25%;
+	top: 20%;
+	z-index: 2;
+	line-height: 30px;
+}
+
+#stars-II-container {
+	/*background-color: red;*/
+	background-image: url(../images/home/bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+#stars-I-container {
+	/*background-color: red;*/
+	background-image: url(../images/home/bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+#stars > div[class*="col"] > #stars-right {
+	max-width: 50%;
+	min-height: 125%;
+	overflow-y: hidden;
+	position: absolute;
+	left: 25%;
+	top: -55%;
+	z-index: 2;
+	line-height: 30px;
+}
+
+#stars > div[class*="col"] > div[class*="card"] .card-text {
+	max-height: 200px;
+	color: red;
+	overflow-y: hidden;
+}
+
+@media only screen and (max-height: 812px) {
+	#stars > div[class*="col"] > div[class*="card"] {
+		max-height: 100%;
+	}
+}
+/*end of custom styling for home page*/
+
+
+/*custom styling for about page*/
+
+#about-landing {
+	/*border: 1px solid red;*/
+	max-height: 91.7vh;
+}
+
+#about-landing img {
+	min-height: 91.7vh;
+	max-height: 91.7vh;
+}
+
+
+#mission-upper {
+	max-height: 50vh;
+	min-width: 100%;
+}
+
+#mission-lower {
+	/*border: 1px solid red;*/
+	min-height: 50vh;
+	max-height: 50vh;
+	background-color: violet;
+	overflow-y: hidden;
+}
+
+#mission-text {
+	height: 50vh;
+	width: 50%;
+	background-color: red;	
+}
+
+#mission-text h1 {
+	line-height: 50vh;
+}
+
+#vision-text {
+	height: 50vh;
+	width: 50%;
+	background-color: blue;
+}
+
+#vision-text h1 {
+	line-height: 50vh;
+}
+
+#mission-message {
+	display: none;
+}
+
+#vision-message {
+	display: none;
+}
+
+#company-name,
+#mission-message,
+#vision-message {
+	/*text-align: center;*/
+	/*line-height: 50vh;*/
+	/*padding: 125px;*/
+	/*background-color: red;*/
+/*	width: 60%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 2px solid grey;*/
+	width: 100%;
+	text-align: center;
+	/*line-height: 40vh;*/
+}
+
+#company-name {
+	line-height: 40vh;
+}
+
+#mission-message,
+#vision-message {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 75%;
+	transform: translate(-50%, -50%);
+	overflow-y: hidden;
+	font-size: 20px;
+}
+
+#display-holder {
+	height: 40vh;
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 2px solid grey;
+}
+@media only screen and (max-width: 400px) {
+	#company-name,
+	#mission-message,
+	#vision-message {
+		font-size: 15px;
+	}
+
+	#mission-message,
+	#vision-message {
+		max-height: 30vh;
+		line-height: 3vh;
+	}
+}
+
+
+
+
+/*end of custom styling for about page*/
+
+/*custom styling for services section*/
+
+#services {
+	/*min-height: 100vh;*/
+	/*max-height: 100vh;*/
+	/*height: 100%;*/
+	overflow-y: hidden;
+}
+
+#services .card {
+	max-height: 100%;
+}
+
+#button-1 {
+	display: none;
+}
+
+#button-2 {
+	display: none;
+}
+
+#button-3 {
+	display: none;
+}
+
+#business-content {
+	/*display: none;*/
+	margin-top: 10%;
+	padding: 0 10px;
+	visibility: hidden;
+	height: 0;
+	width: 0;
+}
+
+#joinus-content {
+	display: none;
+	margin-top: 10%;
+	padding: 0 10px;
+}
+
+#support-content {
+	display: none;
+	margin-top: 10%;
+	padding: 0 10px;
+}
+
+#about-page {
+	/*overflow-y: hidden;*/
+}
+#about-page ~ footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+/*end of custom styling for services section*/
+
+/*contact us page*/
+#contact > label {
+	display: block;
+	text-align: center;
+	height: 100px;
+	width: 300px;
+	margin: 0 auto;
+	background-color: red;
+	padding-top: 25px;
+}
+
+#contact-us {
+	display: none;
+}
+
+#visit-us {
+	display: none;
+}
+
+#contact-form {
+	display: none;
+}
+
+#visit-form {
+	display: none;
+}
+
+#contact-us:checked ~ #contact-form {
+	display: block;
+}
+
+#visit-us:checked ~ #visit-form {
+	display: block;
+}
+
+#contact-form input[type*=radio] {
+	display: none;
+}
+
+/*
+#form-sup:checked ~ #label-inq h3 {
+	color: red;
+}
+*/
+#contact-form > form > #try999 > #form-inq:checked ~ #label-inq > h3 {
+	color: red;
+}
+
+#contact-form > form > #try999 > #form-sup:checked ~ #label-sup > h3 {
+	color: red;
+}
+
+#contact-form > form > #try999 > #form-oth:checked ~ #label-oth > h3 {
+	color: red;
+}
+
+/*end of contact us page*/
+
+/*gallery*/
+#carousel-home {
+	max-height: 100vh;
+}
+
+#carousel-home img {
+	max-height: 500px;
+}

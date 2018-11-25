@@ -1,529 +1,572 @@
+/*reset*/
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/*transition: all 2s ease;*/
-	transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;
 }
-
 
 html {
 	scroll-behavior: smooth;
-	overflow-x: hidden;
+	background-color: #050404;
+	/*overflow: hidden;*/
 }
-/*custom style of landing page*/
 
-#index-start,
-#index-center,
-#index-end {
-	height: 33%;
+body,
+a {
+	color: #EAEAEA;
 }
+
+p {
+	color: #ABA29F;
+}
+mark {
+	background-color: #893168;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+header {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p,
+mark {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*modal images*/
+
+.modal img {
+	min-height: 426px;
+	max-height: 426px;
+	min-width: 766px;
+	max-width: 766px;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.carousel-caption h5 {
+	/*color: #893168;*/
+}
+
+/*end of modal images*/
+
+/*custom styling for index page*/
 
 #index-landing {
-	height: 100vh;
-	background-image: url(../images/index/bg.jpg);
+	/*background-color: #050404;*/
+	background-image: url(../images/about-messagebg.gif);
 	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+
+#company-name {
+	/*width: 50%;*/
+	border: solid 4px #893168;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 3%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0,0,20, 0.3);
+	z-index: 3;
+}
+
+#company-name hr {
+	width: 75%;
+	/*text-align: center;*/
+	margin: 10px auto;
+}
+
+#company-name h1 {
+	/*border-bottom: solid 2px red;*/
+}
+
+#index-link {
+	border: solid 4px #893168;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	padding: 3%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0,0,20, 0.3);
+	z-index: 3;
+}
+
+#index-link a {
+	display: block;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+/*end of custom styling for index page*/
+
+/*custom styling for home page*/
+
+/*home-landing styles*/
+
+#home-landing {
+	min-height: 100vh;
+}
+
+#home-landing-upper {
+	height: 50vh;
+	background-image: url(../images/bg_.jpg);
+	/*background-color: #050404;*/
+}
+
+#home-landing-lower {
+	height: 50vh;
+	background-image: url(../images/landing.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#home-landing-slogan{
+	background-color: transparent;
+	padding: 10%;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	text-align: center;
+	border: solid 4px #893168;
+}
+
+
+#home-landing-slogan mark {
+	color: white;
+}
+/*end of home-landing styles*/
+
+
+/*home-body styles*/
+
+/*home-promotions*/
+
+#home-promo {
+	/*background-color: violet;*/
+	background-image: url(../images/services-promo.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
-	overflow: hidden;
 }
 
-#index-landing > .row {
-	min-height: 0;
-}
-
-#index-start a {
-	line-height: 30vh;
-}
-
-#index-center a {
-	/*min-height: 35vh;*/
-	line-height: 35vh;
-}
-
-.emp {
-	border: 1px solid transparent;
-	min-height: 33vh;
-	/*display: block;*/
-}
-
-.fw {
-	min-height: 100px;
-	background-color: red;
-	opacity: 0;
-}
-
-#start2 {
-	color: white;
-	padding: 15px;
-	min-height: 33vh;
-}
-
-#start2 h1 {
-	width: 100%;
-	word-wrap: break-word;
-}
-
-#start a {
-	text-decoration: none;
-	color: white;
+#home-promo div[id*='col-'] {
 	text-align: center;
-	display: block;
-	line-height: 200px;
-}
-
-
-.surprise a {
-	text-decoration: none;
-	/*color: white;*/
-	color: transparent;
-	display: block;
-	letter-spacing: 5px;
 	padding: 0;
-	font-size: 50px;
-	line-height: 150px;
-	min-height: 150px;
+	/*margin: 0 auto;*/
 }
-
-.surprise a:hover {
-	color: white;
-}
-
-/*custom styling of landing page for different screenviews*/
-
-@media only screen and (max-width: 500px) {
-	#start > a {
-		line-height: 16px;
-	}
-
-	#index-start {
-		display: none;
-	}
-
-	#index-center {
-		display: none;
-	}
-}
-
-@media only screen and (min-width: 800px) {
-	.emp {
-		min-height: 30vh;
-	}
-}
-
-
-/*end of landing page styles*/
-
-/*custom styling of home page*/
-/*.container*/
-
-#home {
-	background-image: url(../images/home/bg.jpg);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 100vh;
 	
-}
-
-#slogan {
-	min-height: 50vh;
-	/*width: 100%;*/
-	margin: 0;
-	padding: 0;
-	color: red;
-	/*width: 100%;*/
-	background-color: black;
+#home-promo div[id*='card-'] {
+	min-height: 400px;
+	max-width: 75%;
 	text-align: center;
-	/*line-height: 400px;*/
+	margin: 0 auto;
+	margin-bottom: 5%;
 }
 
-#slogan h1 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	border: solid 7px red;
-	padding: 5%;
+#home-promo a {
+	text-decoration: none;
+}
+/*end of promotions*/
+
+/*home-contents*/
+#home-content > div[id*='home-content-operations'] p,
+#home-content > div[id*='home-content-hr'] p {
+	width: 60%;
 }
 
-/*edit 11212018 because of conflict with about.html services page*/
-/*#services {*/
-#servicesss {
-	min-height: 50vh;
-	/*border: 2px solid red;*/
-	/*height: 400px;*/
-	color: grey;
-	text-align: center;
-	/*line-height: 400px;*/
-}
-
-/*#services h1 {*/
-#servicesss h1 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	border: solid 7px red;
-	padding: 5%;
-}
-
-/*end of edit 11212018 because of conflict with about.html services page*/
-
-/*
-#qwe {
-	padding: 20%;
-	text-align: center;
-	background-color: red;
-}
-*/
-
-.row {
-	min-height: 100vh;
-	margin: 0;
-	padding: 0;
-}
-
-#home-slogan {
-	background-image: url(../images/home/bg.jpg);
-	background-attachment: fixed;
+#home-content-operations {
+	background-image: url(../images/services-operations.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-}
-
-#slogan-up {
-	min-height: 50vh;
-	background-color: black;
-}
-
-#slogan-up > h1 {
-	text-align: center;
-	position: absolute;
-	left: 50%;
-	top: 100%;
-	transform: translate(-50%, -50%);
-	background-color: red;
-	padding: 10%;
-	box-shadow: 8px 5px 15px blue;
-}
-
-#slogan-down {
-	min-height: 50vh;
-}
-
-[class*="col"] {
-	padding: 0;
-}
-
-
-/*navigation*/
-#navbar {
-	min-width: 100%;
-	/*overflow-x: hidden;*/
-}
-
-#aaa {
-	padding: 0;
-	margin: 0;
-	/*removes the white space in the navbar, but removes it's sticky effect*/
-	/*overflow-x: hidden;*/
-}
-
-/*stars*/
-#stars > div[class*="col"]{
-	/*border: 1px solid violet;*/
-	min-height: 50vh;
-}
-
-#stars > div[class*="col"] > #stars-left {
-	/*background-color: red;*/
-	/*background-image: url(assets/images/home/bg.jpg);*/
-	max-width: 50%;
-	min-height: 125%;
-	overflow-y: hidden;
-	position: absolute;
-	left: 25%;
-	top: 20%;
-	z-index: 2;
-	line-height: 30px;
-}
-
-#stars-II-container {
-	/*background-color: red;*/
-	background-image: url(../images/home/bg.jpg);
-	background-repeat: no-repeat;
 	background-attachment: fixed;
-
+	padding: 5%;
 }
 
-#stars-I-container {
-	/*background-color: red;*/
-	background-image: url(../images/home/bg.jpg);
-	background-repeat: no-repeat;
+.content-container {
+	border: solid 2px #893168;
+	border-radius: 15px;
+	padding: 10px;
+	background-color: grey;
+}
+
+#home-content-marketing {
+	background-image: url(../images/services-marketing.jpg);
+	background-size: cover;
 	background-attachment: fixed;
-
+	background-repeat: no-repeat;
+	padding: 5%;
 }
 
-#stars > div[class*="col"] > #stars-right {
-	max-width: 50%;
-	min-height: 125%;
-	overflow-y: hidden;
-	position: absolute;
-	left: 25%;
-	top: -55%;
-	z-index: 2;
-	line-height: 30px;
+#home-content-marketing h2 {
+	text-align: right;
+}
+#home-content-marketing p {
+	width: 100%;
 }
 
-#stars > div[class*="col"] > div[class*="card"] .card-text {
-	max-height: 200px;
-	color: red;
-	overflow-y: hidden;
+#marketing-right-text p {
+	width: 100%;
 }
 
-@media only screen and (max-height: 812px) {
-	#stars > div[class*="col"] > div[class*="card"] {
-		max-height: 100%;
-	}
+#home-content-hr {
+	background-image: url(../images/services-hr.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 5%;
 }
-/*end of custom styling for home page*/
 
+
+/*end of home-contents*/
+
+/*end of home-body styles*/
 
 /*custom styling for about page*/
 
 #about-landing {
-	/*border: 1px solid red;*/
-	max-height: 91.7vh;
-}
-
-#about-landing img {
-	min-height: 91.7vh;
-	max-height: 91.7vh;
-}
-
-
-#mission-upper {
-	max-height: 50vh;
-	min-width: 100%;
-}
-
-#mission-lower {
-	/*border: 1px solid red;*/
-	min-height: 50vh;
-	max-height: 50vh;
-	background-color: violet;
-	overflow-y: hidden;
-}
-
-#mission-text {
-	height: 50vh;
-	width: 50%;
-	background-color: red;	
-}
-
-#mission-text h1 {
-	line-height: 50vh;
-}
-
-#vision-text {
-	height: 50vh;
-	width: 50%;
-	background-color: blue;
-}
-
-#vision-text h1 {
-	line-height: 50vh;
-}
-
-#mission-message {
-	display: none;
-}
-
-#vision-message {
-	display: none;
-}
-
-#company-name,
-#mission-message,
-#vision-message {
-	/*text-align: center;*/
-	/*line-height: 50vh;*/
-	/*padding: 125px;*/
-	/*background-color: red;*/
-/*	width: 60%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border: 2px solid grey;*/
-	width: 100%;
-	text-align: center;
-	/*line-height: 40vh;*/
-}
-
-#company-name {
-	line-height: 40vh;
-}
-
-#mission-message,
-#vision-message {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 75%;
-	transform: translate(-50%, -50%);
-	overflow-y: hidden;
-	font-size: 20px;
-}
-
-#display-holder {
-	height: 40vh;
-	width: 80%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border: 2px solid grey;
-}
-@media only screen and (max-width: 400px) {
-	#company-name,
-	#mission-message,
-	#vision-message {
-		font-size: 15px;
-	}
-
-	#mission-message,
-	#vision-message {
-		max-height: 30vh;
-		line-height: 3vh;
-	}
-}
-
-
-
-
-/*end of custom styling for about page*/
-
-/*custom styling for services section*/
-
-#services {
-	/*min-height: 100vh;*/
-	/*max-height: 100vh;*/
-	/*height: 100%;*/
-	overflow-y: hidden;
-}
-
-#services .card {
-	max-height: 100%;
-}
-
-#button-1 {
-	display: none;
-}
-
-#button-2 {
-	display: none;
-}
-
-#button-3 {
-	display: none;
-}
-
-#business-content {
-	/*display: none;*/
-	margin-top: 10%;
-	padding: 0 10px;
-	visibility: hidden;
-	height: 0;
-	width: 0;
-}
-
-#joinus-content {
-	display: none;
-	margin-top: 10%;
-	padding: 0 10px;
-}
-
-#support-content {
-	display: none;
-	margin-top: 10%;
-	padding: 0 10px;
-}
-
-#about-page {
-	/*overflow-y: hidden;*/
-}
-#about-page ~ footer {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-}
-/*end of custom styling for services section*/
-
-/*contact us page*/
-#contact > label {
-	display: block;
-	text-align: center;
-	height: 100px;
-	width: 300px;
-	margin: 0 auto;
-	background-color: red;
-	padding-top: 25px;
-}
-
-#contact-us {
-	display: none;
-}
-
-#visit-us {
-	display: none;
-}
-
-#contact-form {
-	display: none;
-}
-
-#visit-form {
-	display: none;
-}
-
-#contact-us:checked ~ #contact-form {
-	display: block;
-}
-
-#visit-us:checked ~ #visit-form {
-	display: block;
-}
-
-#contact-form input[type*=radio] {
-	display: none;
-}
-
-/*
-#form-sup:checked ~ #label-inq h3 {
-	color: red;
-}
-*/
-#contact-form > form > #try999 > #form-inq:checked ~ #label-inq > h3 {
-	color: red;
-}
-
-#contact-form > form > #try999 > #form-sup:checked ~ #label-sup > h3 {
-	color: red;
-}
-
-#contact-form > form > #try999 > #form-oth:checked ~ #label-oth > h3 {
-	color: red;
-}
-
-/*end of contact us page*/
-
-/*gallery*/
-#carousel-home {
 	max-height: 100vh;
 }
 
-#carousel-home img {
-	max-height: 500px;
+
+#carousel-about img{
+	min-height: 100vh;
+	max-height: 100vh;
+	width: 100%;
+}
+
+#about-home {
+	height: 100vh;
+}
+
+#about {
+	background-image: url(../images/about-messagebg.gif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#about-mission {
+	position: relative;
+	/*background-color: red;*/
+	background-image: url(../images/about-carousel-3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#about-vision {
+	position: relative;
+	background-image: url(../images/about-carousel-3-inv.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#about-mission > .text,
+#about-vision > .text{
+	/*border: 2px solid red;*/
+	/*background-color: white;*/
+	/*background-color: rgba(109,114,113,1);*/
+	background-color: white; /*6D7271*/
+	color: maroon;
+	width: 50%;
+	text-align: center;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	mix-blend-mode: screen;
+	font-size: 4vw;
+	font-weight: bold;
+}
+
+#mission-container,
+#vision-container,
+#placeholder-container {
+	width: 50%;
+	/*margin: auto auto;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#mission-message,
+#vision-message,
+#placeholder-message {
+	text-align: justify;
+	font-size: 2.5vw;
+	padding: 5%;
+	margin-bottom: 0;
+	border: 1px solid black;
+	box-shadow: 8px 2px indianred; 
+}
+
+#mission-message,
+#vision-message {
+	display: none;
+}
+
+#show-mission,
+#show-vision {
+	display: none;
+}
+
+#show-mission:checked ~ #mission-container > #mission-message,
+#show-vision:checked ~ #vision-container > #vision-message {
+	display: block;
+}
+
+#show-mission:checked ~ #placeholder-container > #placeholder-message,
+#show-vision:checked ~ #placeholder-container > #placeholder-message {
+	display: none;
+}
+
+#about-divide {
+	height: 75px;
+	line-height: 75px;
+	font-size: 2.5vw;
+	letter-spacing: 40px;
+	text-transform: uppercase;
+	background-color: #893168;
+}
+
+#about-team {
+	/*background-color: #4A1942;*/
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/about-carousel-3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#about-team img {
+	min-height: 600px;
+	max-height: 600px;
+}
+
+@media only screen and (max-width: 400px) {
+	#about-divide {
+		/*line-height: 40px;*/
+	}
+}
+
+/*flip card*/
+
+#about-services {
+	/*min-height: 100vh;
+	max-height: 100vh;*/
+	/*min-height: 100vh;*/
+	position: relative;
+	/*line-height: 100vh;*/
+	padding-top: 10%;
+	/*max-height: 100vh;*/
+	/*background-color: #4A1942;*/
+	background-image: url(../images/services-promo.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 480px) {
+	#about-services {
+		min-height: 200vh;
+	}
+
+	#about-divide {
+		/*line-height: 30px;*/
+		letter-spacing: 30px;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768) {
+	#about-services {
+		min-height: 300vh;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	#about-services {
+		/*max-height: 20vh;*/
+		/*min-height: 100vh;*/
+	}
+}
+
+
+
+#about-services div[id*='about-flip-'] {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	margin-top: 10px;
+	height: 400px;
+}
+
+#about-services > div[class*='col-'] {
+	height: 500px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  /*border: 1px solid #f1f1f1;*/
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  /*border-radius: 30px;*/
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /*background-color: #bbb;*/
+  background-color: #343a40;
+  color: white;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #343a40;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/*end of flip card*/
+
+/*end of custom styling for about page*/
+
+/*custom styling for contact page*/
+#contact-main-container {
+	overflow-x: hidden;
+}
+
+.jumbotron {
+	border-radius: 0;
+}
+
+.jumbotron ul {
+	list-style-type: disc;
+}
+
+.jumbotron ul a {
+	text-decoration: none;
+}
+
+#contact-main-container mark {
+	text-transform: uppercase;
+}
+
+#contact-landing {
+	min-height: 100vh;
+	max-height: 100vh;
+	background-image: url(../images/bga.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#jumbotron-contact {
+	height: 100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+#contact-inquiries {
+	/*min-height: 200vh;*/
+}
+
+#inquiries-appointments div[class='card'] img {
+	border-radius: 40px;
+}
+
+#inquiries-contact,
+#inquiries-support,
+#inquiries-appointments,
+#inquiries-join {
+	/*border: 2px solid grey;*/
+	background-image: url(../images/form-bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+/*end of custom styling for contact page*/
+
+/*custom styling for gallery page*/
+
+#gallery-main-container {
+	min-height: 100vh;
+	overflow-x: hidden;
+	/*max-height: 100vh;*/
+	/*overflow: hidden;*/
+}
+
+#gallery-facilities {
+	height: 100%;
+}
+
+#gallery-main-row {
+	background-image: url(../images/form-bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#gallery-main-row img {
+	min-height: 300px;
+	max-height: 300px;
+	min-width: 100%;
+	max-width: 100%;
+	text-align: center;
+}
+/*end of custom styling for gallery page*/
+
+#disc-page {
+	background-color: black;
+	overflow-y: hidden;
+	/*padding-left: 10px;*/
+	/*margin-left: 20px;*/
+}
+
+#disc-page ul {
+	margin-left: 20px;
 }

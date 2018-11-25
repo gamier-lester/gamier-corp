@@ -4,531 +4,293 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<title> GAMIER CORP | ABOUT US! </title>
-
-	<!-- fontawesom icons -->
+	<title> GAMIER CORP | About</title>
+	
+	<!-- font awesome icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<!-- animate css -->
-	<!-- animate css from danedan -->
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-	<!-- bootstrap css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
-	<!-- external css -->
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+
+	<!-- fav icon -->
+	<link rel="icon" type="image/gif/png" href="assets/images/company-icon.png">
+
+	<!-- external stylesheets -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-	<style type="text/css">
-		#modif {transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;}
-}
-	</style>
-
 </head>
+
 <body>
-
-	<!-- container fluid -->
-	<div id="about-page" class="container-fluid px-0 py-0">
+	<!-- Main container -->
+	<section id="about-main-container bg-dark" class="container-fluid px-0">
 		
-		<!-- landing -->
-		<!-- carousel -->
-		<div id="about-landing" class="carousel slide" data-ride="carousel">
+		<!-- start of about-landing section -->
+		<section id="about-landing" class="container-fluid px-0">
 			
-			<!-- carousel indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#about-landing" data-slide-to="0"></li>
-				<li data-target="#about-landing" data-slide-to="1" class="active"></li>
-				<li data-target="#about-landing" data-slide-to="2"></li>
-			</ol>
-			<!-- end of carousel indicators -->
+			<!-- carousel -->
+			<div id="carousel-about" class="carousel slide" data-ride="carousel">
 
-			<!-- main carousel -->
-			<div class="carousel-inner">
-				
-				<!-- carousel items -->
-				<!-- image1 -->
-				<div class="carousel-item">
-					<img class="d-block img-fluid w-100" src="assets/images/about/company-img-1.jpg">
-				</div>
+				<!-- carousel inner -->
+				<div class="carousel-inner">
 
-				<!-- image2 -->
-				<div class="carousel-item active">
-					<img class="d-block img-fluid w-100" src="assets/images/about/company-img-2.jpg">
-				</div>
+					<!-- carousel items -->
+					<div class="carousel-item active">
+						<img class="d-block w-100" src="assets/images/about-carousel-1.jpg">
+					</div>
 
-				<!-- image3 -->
-				<div class="carousel-item">
-					<img class="d-block img-fluid w-100" src="assets/images/about/company-img-3.jpg">
-				</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="assets/images/about-carousel-2.png">
+					</div>
 
-				<!-- carousel controls -->
-				<a class="carousel-control-prev" href="#about-landing" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon"></span>
-					<span class="sr-only">Previous</span>
-				</a>
+					<div class="carousel-item">
+						<img class="d-block w-100" src="assets/images/about-carousel-3.jpg">
+					</div>
+					<!-- end of carousel items -->
 
-				<a class="carousel-control-next" href="#about-landing" role="button" data-slide="next">
-					<span class="carousel-control-next-icon"></span>
-					<span class="sr-only">Next</span>
-				</a>
-				<!-- end of carousel controls -->
+				</div> <!-- end of carousel inner -->
+
 			</div>
-			<!-- end of main carousel -->
+			<!-- end of carousel -->
 
-		</div>
-		<!-- end of carousel -->
-		<!-- end of landing page -->
+		</section>		
+		<!-- end of about-landing section -->
 
 		<!-- start of nav -->
-		<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-dark sticky-top py-0">
- 			
- 			<a class="navbar-brand" href="home.html">
-				<i class="far fa-hand-peace"></i> Company Name
-			</a>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+			<!-- brand logo for nav -->
+			<a class="navbar-brand" href="home.html"> <i class="fas fa-tv"></i> GAMIER CORP </a>
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+			<!-- button that appears only on media devices -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-contents">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<div id="navbar-nav" class="collapse navbar-collapse">
+			<!-- navbar menu items -->
+			<div class="collapse navbar-collapse" id="navbar-contents">
+				
 				<ul class="navbar-nav ml-auto">
-
 					<li class="nav-item">
-						<a class="nav-link" href="home.html">
-							Home
-						</a>
+						<a class="nav-link" href="home.html"> Home </a>
 					</li>
 
 					<li class="nav-item active">
-						<a class="nav-link" href="about.html">
-							About
-						</a>
+						<a class="nav-link" href="about.html"> About </a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="contact.html">
-							Contact
-						</a>
+						<a class="nav-link" href="contact.html"> Contact </a>
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="gallery.html">
-							Gallery
-						</a>
+						<a class="nav-link" href="gallery.html"> Gallery </a>
 					</li>
 
 				</ul>
+
+			</div>
+			<!-- end of navbar menu items -->
+		</nav>
+		<!-- end of nav -->
+
+		<!-- start of about-home -->
+		<section id="about-home" class="row no-gutters">
+
+			<div id="about-mission" class="col-lg-6 image-container"">
+				<!-- <h1>MISSION</h1> -->
+				<label class="text" for="show-mission"> MISSION </label>
+			</div>
+
+			<div id="about-vision" class="col-lg-6 image-container">
+				<label class="text" for="show-vision"> VISION </label>
 			</div>
 
 
- 		</nav>
+			<div id="about" class="col-lg-12">
 
- 		<!-- end of navigation -->
+				<input type="radio" name="about-company" id="show-mission" role="button">
+				<input type="radio" name="about-company" id="show-vision" role="button">
 
- 		<!-- mission -->
- 		<!-- large screen -->
- 		<div id="mission" class="row mx-0">
- 			<!-- upper part of screen -->
- 			<div id="mission-upper" class="col-lg-12">
+				<div id="mission-container" class="bg-dark">				
+					<p id="mission-message">To establish an invisible bridge that connects businesses globally, which will allow all people of all countries and regions to be united and move forward to the age of technology</p>
+				</div>
+				
+				<div id="vision-container" class="bg-dark">	
+					<p id="vision-message">We can't spell s_ccess without 'u'</p>
+				</div>
 
- 				<!-- start of upper part container -->
- 				<div class="container-fluid px-0">
- 					<div class="row">
+				<div id="placeholder-container" class="bg-dark">
+					<p id="placeholder-message"> Select one above to reveal message </p>
+				</div>
+			</div>
 
- 						<div id="mission-text" class="col-lg-6">
- 							<h1 class="text-center animated flip">
- 								MISSION
- 							</h1>
- 						</div>
+		</section>
+		<!-- end of about-home -->
 
- 						<div id="vision-text" class="col-lg-6">
- 							<h1 class="text-center animated bounce">
- 								VISION
- 							</h1>
- 						</div>
+		<!-- divide line -->
+		<section id="about-divide" class="row no-gutters px-0">
+			<div class="col-lg-12 px-0">
+				<p class="text-center">Services</p>
+			</div>
+		</section>
+		<!-- end of divide line -->
 
- 					</div>
- 				</div>
- 				<!-- end of upper part container -->
+		<!-- about-services -->
+		<section id="about-services" class="row no-gutters">
 
- 			</div>
- 			<!-- end of upper part of screen -->
+			<div id="test1" class="col-12 col-md-12 col-lg-4">
+				<div id="about-flip-bs" class="flip-card">
 
- 			<!-- lower part of screen -->
- 			<div id="mission-lower" class="col-lg-12">
- 				<div id="display-holder">
- 					
-	 				
-	 				<p id="mission-message"> To establish an invisible bridge that connects businesses globally, which will allow all people of all countries and regions to be united and move forward to the age of technology </p>
+		  			<div class="flip-card-inner">
+		    			<div class="flip-card-front">
+		      				<img class="img-fluid" src="assets/images/img1.jpg" alt="Avatar">
+		      				<h2>Business Solutions</h2>
+		    			</div>
 
-	 				<p id="vision-message"> We can't spell s_ccess without 'u' </p>
-	 				<h1 id="company-name">
-	 					MY COMPANY NAME
-	 				</h1>
+		    			<div class="flip-card-back">
+					      	<h1>Business Solutions</h1> 
+					      	<p> We <mark>create</mark> and <mark>modify</mark> different kinds of software applications. Gamier Corp focuses on software products since 1942 and now became one of the best provider here in asia </p>
+					      	<a class="btn btn-block bg-secondary" href="contact.html#inquiries-contact">Inquire</a>
+		    			</div>
 
- 				</div>
- 			</div>
- 		</div>
- 		<!-- end of large screen -->
+		  			</div>
+				</div>
+			</div>
 
- 		<!-- end of mission -->
+			<div class="col-12 col-md-12 col-lg-4">
+				<div id="about-flip-management" class="flip-card">
 
- 		<!-- services -->
- 		<div id="services" class="container-fluid">
- 			<!-- start of row -->
-	 		<div class="row no-gutters">
+		  			<div class="flip-card-inner">
+		    			<div class="flip-card-front">
+		      				<img class="img-fluid" src="assets/images/img2.jpg" alt="Avatar">
+		      				<h2>Management Solutions</h2>
+		    			</div>
 
-	 			<!-- Direct selling of products -->
-	 			<div id="business" class="col-12 col-md-12 col-lg-4">
-	 				<!-- card -->
-	 				<div class="card">
-	 					<img class="card-img-top" src="assets/images/about/services-img-1.jpeg">
+		    			<div class="flip-card-back">
+					      	<h1>Advanced Equipments</h1> 
+					      	<p>Gamier Corp is also around the market for hardware products. If you are looking for a direct supplier of hardware equipments, Gamier Corp will be waiting for your <mark>message</mark></p><a class="btn btn-block bg-secondary" href="contact.html#inquiries-support">Inquire</a>
+		    			</div>
 
-	 					<div class="card-body">
-	 						<h3 class="card-title text-center">
-	 							Business Solutions
-	 						</h3>
-	 						<p class="card-text text-center">
-	 							Become our client today!
-	 						</p>
-	 						<button id="button-try" class="btn btn-primary btn-block"> See More </button>
-	 						<!-- onclick="showbs()" -->
-	 						<button id="button-1" class="btn btn-primary btn-block" onclick="hidebs()"> See Less </button>
-	 					</div>
-	 				</div> <!-- end of card -->
+		  			</div>
+				</div>
+			</div>
 
-	 			</div>
-	 			<!-- end of business col -->
+			<div class="col-12 col-md-12 col-lg-4">
+				<div id="about-flip-join" class="flip-card">
 
-	 			<!-- Modification of products -->
-	 			<div id="modif" class="col-12 col-md-12 col-lg-4">
+		  			<div class="flip-card-inner">
+		    			<div class="flip-card-front">
+		      				<img class="img-fluid" src="assets/images/img3.jpg" alt="Avatar">
+		      				<h2> Join Us! </h2>
+		    			</div>
 
-	 				<!-- card -->
-	  				<div class="card">
-	 					<img class="card-img-top" src="assets/images/about/services-img-1.jpeg">
+		    			<div class="flip-card-back">
+					      	<h1>Start a career with us</h1> 
+					      	<p>Find opportunities in our company</p> 
+					      	<a class="btn btn-block bg-secondary" href="contact.html#inquiries-join">Inquire</a>
+		    			</div>
 
-	 					<div class="card-body">
-	 						<h3 class="card-title text-center">
-	 							Join us!
-	 						</h3>
-	 						<p class="card-text text-center">
-	 							Discover the opportunities waiting for you.
-	 						</p>
-	 						<button class="btn btn-primary btn-block" onclick="showsm()"> See More </button>
-	 						<button id="button-2" class="btn btn-primary btn-block" onclick="hidesm()"> See Less </button>
+		  			</div>
+				</div>
+			</div>
 
-	 					</div>
-	 				</div> <!-- end of card -->
-	 			</div> <!-- end of modif -->
 
-	 			<!-- support -->
-	 			<div id="supp" class="col-12 col-md-12 col-lg-4">
-	 				<!-- card -->
-	 				<div class="card">
-	 					<img class="card-img-top" src="assets/images/about/services-img-1.jpeg">
+		</section>
+		<!-- end of about-services -->
 
-	 					<div class="card-body">
-	 						<h3 class="card-title text-center">
-	 							Support
-	 						</h3>
-	 						<p class="card-text text-center">
-	 							On-site Support | Online Support
-	 						</p>
-	 						<button class="btn btn-primary btn-block" onclick="showsp()"> See More </button>
-	 						<button id="button-3" class="btn btn-primary btn-block" onclick="hidesp()"> See Less </button>
+		<!-- divide line -->
+		<section id="about-divide" class="row no-gutters">
+			<div class="col-lg-12 px-0 mb-0">
+				<p class="text-center"> Team </p>
+			</div>
+		</section>
+		<!-- end of divide line -->
 
-	 					</div>
-	 				</div> <!-- end of card -->
-	 			</div>
-	 			<!-- end of support -->
+		<!-- meet the team -->
+		<section id="about-team" class="row no-gutters justify-content-around bg-dark">
 
-	 			<!-- start of services-content -->
-	 			<div id="business-content" class="col-12 col-md-12 col-lg-8">
-		 				<header style="background-color: red">
-		 					<h1> Gamier Corp. | Inquiries </h1>
-		 				</header>
+			<!-- CEO -->
+			<div class="col-lg-5 my-5">
+				<div class="card bg-dark">
+					<img class="card-img-top" src="assets/images/company-ceo.jpg">
+					<div class="card-body">
+						<h3 class="card-title">
+							Lester
+						</h3>
+						<p class="card-text">
+							Company CEO
+						</p>
+					</div>
+				</div>
+			</div>
 
-		 				<section>
-		 				<h3> You think, we create! </h3>
-		 				<p>
-		 					We are offer low-price softwares or even create new ones that will fit to your taste.
-		 				</p>
-		 				</section>
-		 				
-		 				<hr>
+			<!-- Marketing Dept. Head -->
+			<div class="col-lg-5 my-5">
+				<div class="card bg-dark">
+					<img class="card-img-top" src="assets/images/company-mktg.jpg">
+					<div class="card-body">
+						<h3 class="card-title">
+							Jan
+						</h3>
+						<p class="card-text">
+							Account Executive
+						</p>
+					</div>
+				</div>
+			</div>
 
-		 				<section>
-		 				<h3> Exclusive use of softwares? </h3>
-		 				<p>
-		 					We also offer software modification for existing softwares that you want to use exclusively
-		 				</p>
-		 				</section>
-		 				<button class="btn btn-block"> Contact Us!</button>
-	 			</div>
+			<!-- Fullstack Web Developer -->
+			<div class="col-lg-5 my-5">
+				<div class="card bg-dark">
+					<img class="card-img-top" src="assets/images/company-tech.jpg">
+					<div class="card-body">
+						<h3 class="card-title">
+							Gamier
+						</h3>
+						<p class="card-text">
+							Technical Manager
+						</p>
+					</div>
+				</div>
+			</div>
 
-	 			<div id="joinus-content" class="col-12 col-md-12 col-lg-8">
-		 				<header>
-		 					<h1> Join us! asdasd </h1>
-		 				</header>
+			<!-- HR Head -->
+			<div class="col-lg-5 my-5">
+				<div class="card bg-dark">
+					<img class="card-img-top" src="assets/images/company-dev.jpg">
+					<div class="card-body">
+						<h3 class="card-title">
+							Juancho
+						</h3>
+						<p class="card-text">
+							Developer
+						</p>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<!-- end of meet and greet -->
 
-		 				<form>
-		 					<div class="form-group">
-		 						<label for="email"> Email: </label>
-
-		 						<input id="email" class="form-control" type="email" placeholder="Enter Your Email Here" required></input>
-		 					</div>
-
-		 					<div class="form-group">
-
-								<label for="contact"> Contact Number: </label>
-
-								<input id="contact" class="form-control" type="number" placeholder="Enter Your Contact contact Here" required></input>
-
-							</div>
-
-							<div class="form-group">
-								
-								<label for="message"> Why should we hire you: </label>
-
-								<textarea id="message" class="form-control" placeholder="<Position You're Applying For> <Qualifications>"></textarea>
-
-							</div>
-
-							<button class="btn btn-block btn-success"> Submit </button>
-		 				</form>
-	 			</div>
-
-	 			<div id="support-content" class="col-12 col-md-12 col-lg-8">
-		 				<header>
-		 					<h1> Support </h1>
-		 				</header>
-
-		 				<p>
-		 					Being partners with us comes with great deals and priveledges. Support will always be availably 24/7 <mark>free</mark>.
-		 				</p>
-		 				<p>Yes. It's free</p>
-
-		 				<p> We offer on-site services and also online service support for clients that is located on remote places </p>
-	 			</div>
-	 			<!-- modals section -->
-
-	 			<!-- end of modals section -->
-	 		</div>
- 		</div>
- 		<!-- end of services -->
-
- 		<!-- footer -->
- 		<footer class="footer bg-primary">
+		<!-- start of footer -->
+		<footer class="footer bg-dark">
 			<p class="text-center mb-0 p-3"> Lester Gamier | Tuitt Coding Bootcamp </p>
+			<p class="text-center mb-0 p-3"> Disclaimer: I do not own all the images and contents inside this page. These images and contents are used for training purposes only. <a href="disclaimer.html">Click Here</a> to see the list of the original owners of the images and contents used inside this web page </p>
 		</footer>
-
-	</div>
-	<!-- <footer class="footer bg-primary">
-			<p class="text-center mb-0 p-3"> Lester Gamier | Tuitt Coding Bootcamp </p>
-	</footer> -->
-	<!-- end of container fluid -->
+		<!-- end of footer -->
+	</section>
 
 
 
-	<!-- ********************************************************* -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="assets/js/jquery-3.3.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-	<!-- end of bootstrap js -->
-
-	<script type="text/javascript">
-		// testing
-		document.getElementById("vision-text").addEventListener("mouseover", colchange);
-		document.getElementById("vision-text").addEventListener("mouseout", colreturn);
-
-		function colchange() {
-		    document.getElementById("mission-text").style.backgroundColor = "black";
-		}
-
-		function colreturn() {
-		    document.getElementById("mission-text").style.backgroundColor = "red";
-		}
-		// end of testing
-
-		document.getElementById("mission-text").addEventListener("mouseover", showMission);
-
-		document.getElementById("vision-text").addEventListener("mouseover", showVision);
-		document.getElementById("mission-text").addEventListener("mouseout", mouseexit);
-
-		document.getElementById("vision-text").addEventListener("mouseout", mouseexit);
-
-		function showMission() {
-			document.getElementById("mission-message").style.display = "block";
-			document.getElementById("vision-message").style.display = "none";
-			document.getElementById("company-name").style.display = "none";
-			document.getElementById("mission-lower").style.backgroundColor = "red"
-		}
-
-		function showVision() {
-			document.getElementById("mission-message").style.display = "none";
-			document.getElementById("vision-message").style.display = "block";
-			document.getElementById("company-name").style.display = "none";
-			document.getElementById("mission-lower").style.backgroundColor = "blue"
-		}
-		function mouseexit() {
-			document.getElementById("mission-message").style.display = "none";
-			document.getElementById("vision-message").style.display = "none";
-			document.getElementById("company-name").style.display = "block";
-			document.getElementById("mission-lower").style.backgroundColor = "violet"
-		}
-
-		// function showbs() {
-		// 	document.getElementById("business").style.display = "block";
-		// 	document.getElementById("modif").style.display = "none";
-		// 	document.getElementById("supp").style.display = "none";
-		// 	document.getElementById("button-1").style.display = "block";
-		// 	document.getElementById("business-content").style.display = "block";
-		// };
-		function hidebs() {
-			document.getElementById("business").style.display = "block";
-			document.getElementById("modif").style.display = "block";
-			document.getElementById("supp").style.display = "block";
-			document.getElementById("button-1").style.display = "none";
-			document.getElementById("business-content").style.display = "none";
-
-		}
-
-		function showsm() {
-			document.getElementById("business").style.display = "none";
-			// document.getElementById("modif").style.display = "block";
-			document.getElementById("modif").style.visibility = "hidden";
-			document.getElementById("supp").style.display = "none";
-			document.getElementById("button-2").style.display = "block";
-			document.getElementById("joinus-content").style.display = "block";
-		}
-		function hidesm() {
-			document.getElementById("business").style.display = "block";
-			document.getElementById("modif").style.display = "block";
-			document.getElementById("supp").style.display = "block";
-			document.getElementById("button-2").style.display = "none";
-			document.getElementById("joinus-content").style.display = "none";
-
-		}
-
-		function showsp() {
-			document.getElementById("business").style.display = "none";
-			document.getElementById("modif").style.display = "none";
-			document.getElementById("supp").style.display = "block";
-			document.getElementById("button-3").style.display = "block";
-			document.getElementById("support-content").style.display = "block";
-		}
-		function hidesp() {
-			document.getElementById("business").style.display = "block";
-			document.getElementById("modif").style.display = "block";
-			document.getElementById("supp").style.display = "block";
-			document.getElementById("button-3").style.display = "none";
-			document.getElementById("support-content").style.display = "none";
-		}
-
-		function displaynomore() {
-			var modif = document.getElementById('modif');
-			var supp = document.getElementById('supp');
-
-			modif.style.display = "none";
-		    supp.style.display = "none";
-
-		}
-
-		function displaynomoremessage() {
-			var modif = document.getElementById('modif');
-			var supp = document.getElementById('supp');
-			var businesscon = document.getElementById('business-content')
-
-			modif.style.display = "block";
-		    supp.style.display = "block";
-		    businesscon.style.display = "none";
-
-		}
-
-		function displaymessage() {
-			var businesscon = document.getElementById('business-content');
-			businesscon.style.display = "block";
-		}
-
-		var btn = document.getElementById('button-try');
-		var modif = document.getElementById('modif');
-		var supp = document.getElementById('supp');
-		var heightm = modif.clientHeight;
-		var widthm = modif.clientWidth;
-		var heights = supp.clientHeight;
-		var widths = supp.clientWidth;
-
-		var businesscon = document.getElementById('business-content');
-		var heightb = businesscon.clientHeight;
-		var widthb = businesscon.clientWidth;
-		// console.log(width + 'x' + height);
-		// initialize them (within hint.style)
-		modif.style.height = heightm + 'px';
-		modif.style.width = widthm + 'px';
-		supp.style.height = heights + 'px';
-		supp.style.width = widths + 'px';
-		businesscon.style.height = heightb + 'px';
-		businesscon.style.width = widthb + 'px';
-
-		btn.addEventListener('click', function(){
-		  if(modif.style.visibility == 'hidden' && supp.style.visibility == 'hidden'){
-		    modif.style.visibility = 'visible';
-		    supp.style.visibility = 'visible';
-		    //hint.style.opacity = '1';
-		    modif.style.height = '100%';
-		    modif.style.width = '100%';
-		    modif.style.padding = '0';
-		    supp.style.height = '100%';
-		    supp.style.width = '100%';
-		    supp.style.padding = '.5em';
-
-		    businesscon.style.height = '0';
-			businesscon.style.width = '0';
-		  } else if (modif.style.display == 'none' && supp.style.display == 'none'){
-		  	modif.style.visibility = 'visible';
-		    supp.style.visibility = 'visible';
-		  	modif.style.display = 'block';
-		    supp.style.display = 'block';
-		    businesscon.style.height = '0';
-			businesscon.style.width = '0';
-			businesscon.style.visibility = 'hidden';
-			setTimeout(displaynomoremessage, 1000);
-
-			modif.style.height = '100%';
-		    modif.style.width = '100%';
-		    modif.style.padding = '0';
-		    supp.style.height = '100%';
-		    supp.style.width = '100%';
-		    supp.style.padding = '0';
-		  }
-		  else {
-		    modif.style.visibility = 'hidden';
-		    supp.style.visibility = 'hidden';
-		    //hint.style.opacity = '0';
-		    modif.style.height = '0';
-		    modif.style.width = '0';
-		    modif.style.padding = '0';
-		    supp.style.height = '0';
-		    supp.style.width = '0';
-		    supp.style.padding = '0';
-
-		    // modif.style.opacity = '0';
-		    // supp.style.opacity = '0';
-
-		    
-
-		    businesscon.style.visibility = 'visible'
-		    businesscon.style.height = '100%';
-			businesscon.style.width = '100%';
-
-			//try remove display property
-		    setTimeout(displaynomore, 1000);
-		    setTimeout(displaymessage, 1000);
-
-		  }
-
-		});
-
-	</script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- end of bootstrap js -->
 </body>
 </html>
